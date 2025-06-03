@@ -1,3 +1,5 @@
+## Check the about_game() function (in this file) for game credits
+
 ## basic story idea:
 ## you arrive at a town that your friend is in, when the town is under attack.
 ## you have to get in sneakily to be able to save them, since you find out that he is still in there from his family.
@@ -14,6 +16,10 @@ from pathlib import Path
 ## ## Game Libraries
 ## # Graphics
 import graphics
+
+## # Utilities
+import utils
+from utils import typewriter
 
 ## # Defaults
 import player_stuff
@@ -89,18 +95,13 @@ def about_game():
     ## Maybe this may change...
     typewriter(f"""Placeholder Game Name:
     Designed, Programmed, and Writen by: Kamie!
-    Some game design choices from: The people in my Discord Server!
+    Some game design choices from      : The people in my Discord Server!
 
 Socials:
-    My Website: https://kamies-blog.netlify.app
+    My Website    : https://kamies-blog.netlify.app
     Discord Server: https://discord.gg/saZqeK2m9d""")
 
-def typewriter(string, speed=0.003, end="\n"):
-    console = Console(no_color=True)
-    for char in string:
-        console.print(char, end="")
-        time.sleep(speed)
-    print("", end=end)
+
 
 # def color_typewriter(string, speed=0.05, end="\n"):
 #     for char in string:
@@ -109,6 +110,8 @@ def typewriter(string, speed=0.003, end="\n"):
 #     print("", end=end)
 
 def character_generator():
+    clear_screen()
+    print(graphics.TITLE_SCREEN)
     typewriter(language['CHAR_GEN']['NAME']['QUESTION'])
     name = ""
     while True:
@@ -124,6 +127,8 @@ def character_generator():
             continue
 
         break
+    clear_screen()
+    print(graphics.TITLE_SCREEN)
     typewriter(language['CHAR_GEN']['GENDER']['QUESTION'])
     typewriter(f"1: {language['CHAR_GEN']['GENDER']['MALE']}")
     typewriter(f"2: {language['CHAR_GEN']['GENDER']['FEMALE']}")
@@ -137,7 +142,8 @@ def character_generator():
         else:
             console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
-
+    clear_screen()
+    print(graphics.TITLE_SCREEN)
     typewriter(language['CHAR_GEN']['CLASS']['QUESTION'])
     typewriter(f"1: {language['CHAR_GEN']['CLASS']['SWORDSMAN']}")
     typewriter(f"2: {language['CHAR_GEN']['CLASS']['RANGER']}")
@@ -155,7 +161,8 @@ def character_generator():
         else:
             console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
-
+    clear_screen()
+    print(graphics.TITLE_SCREEN)
     ## this whole section looks like ass, i know
     typewriter(language['CHAR_GEN']['CONFIRM']['TO_CONFIRM'], end="")
     typewriter(language['CHAR_GEN']['CONFIRM']['DOT_DOT_DOT'], speed=0.5)
@@ -201,12 +208,53 @@ def character_generator():
         print("unfished")
         exit(1)
     else:
-        clear_screen()
         character_generator()
 
 
+## Checks if the main menu hasn't been loaded yet.
+## If it hasn't, then it prints the title screen with typewriter(), otherwise it uses print()
+main_menu_first_load_check_yes_why_am_i_making_this_name_long = False
+
+def new_or_load_game():
+    print(graphics.TITLE_SCREEN)
+    typewriter(language['MAIN_MENU']['START_GAME_SUB']['NEW_OR_LOAD_QUESTION'])
+    typewriter(f"1: {language['MAIN_MENU']['START_GAME_SUB']['NEW_GAME']}")
+    typewriter(f"2: {language['MAIN_MENU']['START_GAME_SUB']['LOAD_GAME']}")
+    typewriter(f"3: {language['MAIN_MENU']['START_GAME_SUB']['GO_BACK']}")
+    ask = ""
+    while True:
+        ask = str(console.input(">")).lower().strip()
+
+        if ask == "1" or ask == "2" or ask == "3":
+            break
+        elif ask == "back": ## fix muscle memory issues
+            ask = "3"
+            break
+        elif ask == "help":
+            ## those who know: skull
+            console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
+            typewriter(language["HELP"]["MAIN_MENU"])
+        else:
+            console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+            typewriter(f" {language['ERROR']['NOT_OPTION']}")
+
+    if ask == "1":
+        clear_screen()
+        character_generator()
+    elif ask == "2":
+        print("unfished")
+        exit(1)
+    elif ask == "3":
+        clear_screen()
+        main_menu()
+
 def main_menu():
-    typewriter(graphics.TITLE_SCREEN)
+    global main_menu_first_load_check_yes_why_am_i_making_this_name_long
+    if not main_menu_first_load_check_yes_why_am_i_making_this_name_long:
+        typewriter(graphics.TITLE_SCREEN)
+        main_menu_first_load_check_yes_why_am_i_making_this_name_long = True
+    else:
+        print(graphics.TITLE_SCREEN)
     typewriter(f"1: {language["MAIN_MENU"]["OPTION_1"]}", end="")
     console.print("[black not bold](v0.0.0 \[pre-alpha])[/]")
     typewriter(f"2: {language["MAIN_MENU"]["OPTION_2"]}")
@@ -233,7 +281,7 @@ def main_menu():
 
     if ask == "1":
         clear_screen()
-        character_generator()
+        new_or_load_game()
     elif ask == "2":
         pass
     elif ask == "3":

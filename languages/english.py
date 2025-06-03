@@ -39,6 +39,13 @@ All-Rounder - good with all weapons    (no bonuses)""",
         "OPTION_1": "Start Game   ", ## must be 12 chars or fewer for the spacing of version number
         "OPTION_2": "About",
         "OPTION_3": "Exit Game",
+
+        "START_GAME_SUB": {
+            "NEW_OR_LOAD_QUESTION": "Would you like to start a new game, or load a saved game?",
+            "NEW_GAME": "New Game",
+            "LOAD_GAME": "Load Game",
+            "GO_BACK": "Go Back"
+        }
     },
     ## # Character Generator
     "CHAR_GEN": {

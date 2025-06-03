@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="those who know">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="brainrot_english.py is now deprecated&#10;maybe ill bring it back when the game is done">
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/npc/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TheKamboy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TheKamboy/PythonTextRPG.git",
+    "accountId": "a748d7b0-f707-402e-a801-1f0841464308"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -99,7 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748911470618</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1748915668274</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748915668274</updated>
+    </task>
+    <task id="LOCAL-00004" summary="brainrot_english.py is now deprecated&#10;maybe ill bring it back when the game is done">
+      <option name="closed" value="true" />
+      <created>1748920245653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748920245653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="those who know" />
-    <option name="LAST_COMMIT_MESSAGE" value="those who know" />
+    <MESSAGE value="README.md" />
+    <MESSAGE value="brainrot_english.py is now deprecated&#10;maybe ill bring it back when the game is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="brainrot_english.py is now deprecated&#10;maybe ill bring it back when the game is done" />
   </component>
 </project>
