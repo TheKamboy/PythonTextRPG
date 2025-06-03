@@ -1,0 +1,77 @@
+LANGUAGE = {
+    ## ## Regular
+    "HELP": {
+        "PREFIX": "HELP:",
+
+        "MAIN_MENU": "No Help Available (so leave me alone)",
+
+        "CHAR_GEN": {
+            "NAME": """Are you trying to name your character "help", or are asking for help to name your character?
+If it's the other thing, maybe name your character "John", or "Jane".""",
+            "CLASS": """Classes designed for certain weapons will have bonus damage for that weapon,
+but less damage and a bigger chance of missing for weapons they're not designed for.
+
+Swordsman   - best with melee weapons  (like swords)
+Ranger      - best with ranged weapons (like bows)
+Wizard      - best with magic weapons  (like staffs)
+All-Rounder - good with all weapons    (no bonuses)""",
+        },
+    },
+    "ERROR": {
+        "PREFIX": "ERROR:",
+
+        "CHAR_GEN": {
+            "NAME_EMPTY": "Your name can't be empty!",
+        },
+
+        "NOT_OPTION": "Not an option.",
+    },
+
+    ## ## In-Game Stuff
+
+    ## ## Menus
+    ## # Main Menu
+    "MAIN_MENU": {
+        ## Options
+        ## TODO: replace option naming to make more human readable
+        "OPTION_1": "Start Game   ", ## must be 12 chars or fewer for the spacing of version number
+        "OPTION_2": "About",
+        "OPTION_3": "Exit Game",
+    },
+    ## # Character Generator
+    "CHAR_GEN": {
+        "NAME": {
+            "QUESTION": "What will your name be?",
+        },
+        "GENDER": {
+            "QUESTION": "What will your gender be?",
+
+            "MALE": "Male",
+            "FEMALE": "Female",
+            "OTHER": "Other",
+        },
+        "CLASS": {
+            "QUESTION": "What do you want your class to be? (type \"help\" to learn more)",
+
+            "SWORDSMAN": "Swordsman",
+            "RANGER": "Ranger",
+            "WIZARD": "Wizard",
+            "ALL-ROUNDER": "All-Rounder",
+        },
+
+        "CONFIRM": {
+            "TO_CONFIRM": "To confirm",
+            "IS_CORRECT": "Is that correct?",
+            "DOT_DOT_DOT": "...", ## I have no clue if this will need to change between languages
+
+            "NAME"  : "Your name will be:  ",
+            "GENDER": "Your gender will be:",
+            "CLASS" : "Your class will be: ",
+        },
+    },
+
+    ## ## Other
+    "OTHER": {
+        "EXIT_MSG": "Goodbye!",
+    }
+}

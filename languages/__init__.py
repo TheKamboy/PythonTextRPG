@@ -1,0 +1,2 @@
+import languages.english
+import languages.brainrot_english
