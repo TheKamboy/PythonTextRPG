@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="those who know">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/brainrot_english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/brainrot_english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3

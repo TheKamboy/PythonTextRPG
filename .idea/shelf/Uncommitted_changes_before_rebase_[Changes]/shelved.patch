@@ -1,0 +1,72 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4b413fe2-f2b5-42d6-9c81-5b95b74e885c\" name=\"Changes\" comment=\"those who know\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/languages/__init__.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/languages/__init__.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/languages/brainrot_english.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/languages/brainrot_english.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/languages/english.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/languages/english.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/save_data/__init__.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/save_data/__init__.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2xkA7Ago9fZoUF6WoO6uDc1s7Yb\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/kamie/PycharmProjects/PythonTextAdventureRPG/languages&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/languages\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159\" />\n        <option value=\"bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4b413fe2-f2b5-42d6-9c81-5b95b74e885c\" name=\"Changes\" comment=\"\" />\n      <created>1748471527745</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1748471527745</updated>\n      <workItem from=\"1748471528747\" duration=\"61000\" />\n      <workItem from=\"1748471596982\" duration=\"136000\" />\n      <workItem from=\"1748482147529\" duration=\"4221000\" />\n      <workItem from=\"1748569362372\" duration=\"6944000\" />\n      <workItem from=\"1748712726781\" duration=\"750000\" />\n      <workItem from=\"1748714489299\" duration=\"637000\" />\n      <workItem from=\"1748727047547\" duration=\"313000\" />\n      <workItem from=\"1748824964839\" duration=\"1186000\" />\n      <workItem from=\"1748826628849\" duration=\"7409000\" />\n      <workItem from=\"1748834696982\" duration=\"2037000\" />\n      <workItem from=\"1748911406610\" duration=\"2253000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"those who know\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1748911464400</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1748911464400</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"those who know\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1748911470618</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1748911470618</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"those who know\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"those who know\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 127553be89ca07b5c0cec692bd89a07bbd72455b)
++++ b/.idea/workspace.xml	(date 1748914551772)
+@@ -4,13 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="those who know">
++    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="adding languages is now easy">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/languages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/__init__.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/languages/brainrot_english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/brainrot_english.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/save_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data/__init__.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -84,7 +79,7 @@
+       <workItem from="1748824964839" duration="1186000" />
+       <workItem from="1748826628849" duration="7409000" />
+       <workItem from="1748834696982" duration="2037000" />
+-      <workItem from="1748911406610" duration="2253000" />
++      <workItem from="1748911406610" duration="3144000" />
+     </task>
+     <task id="LOCAL-00001" summary="those who know">
+       <option name="closed" value="true" />
+@@ -102,14 +97,34 @@
+       <option name="project" value="LOCAL" />
+       <updated>1748911470618</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="adding languages is now easy">
++      <option name="closed" value="true" />
++      <created>1748913709551</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1748913709551</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="those who know" />
+-    <option name="LAST_COMMIT_MESSAGE" value="those who know" />
++    <MESSAGE value="adding languages is now easy" />
++    <option name="LAST_COMMIT_MESSAGE" value="adding languages is now easy" />
+   </component>
+ </project>
+\ No newline at end of file
