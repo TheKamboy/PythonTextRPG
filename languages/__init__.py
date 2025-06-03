@@ -1,7 +1,6 @@
 from languages.english import LANGUAGE as english
-from languages.brainrot_english import LANGUAGE as brainrot_english
 
-_LANGUAGE_LIST = [english, brainrot_english]
+_LANGUAGE_LIST = [english]
 
 def load_language(index:int) -> dict:
     if index > len(_LANGUAGE_LIST)-1:
