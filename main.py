@@ -29,12 +29,20 @@ console = Console()
 ## HELP_MSG = """[bold]HELP:[/]
 ## No Help Available (so leave me alone)"""
 
+## ## Default Values
+## # Player
 player = player_stuff.PLAYER_BASE
+## # Save Data
 game_save = save_data.SAVE_DATA_BASE
 
-language = languages.english.LANGUAGE ## those who default
+language = languages.english ## those who default
 
 def load_save_data() -> bool:
+    """Loads the game data
+    (not to be confused with the load save function in the save_data module)
+
+    :returns: Returns False if save data doesn't exist,
+        and if save data doesn't have a language saved (just in case)"""
     global game_save, language
     file_location = Path(save_data.SAVE_DATA_FILE)
     save = dict
@@ -44,15 +52,16 @@ def load_save_data() -> bool:
     else:
         return False
 
-    if save['LANGUAGE'] == {}:
+    if save['LANGUAGE'] == -69:
         return False
 
-    language = save['LANGUAGE']
+    language = languages.load_language(save['LANGUAGE'])
     game_save = save
 
     return True
 
 def clear_screen():
+    """You don't really need docstrings, since my ass code makes things more verbose, but I'm putting some in places anyway."""
     _ = call('clear' if os.name == 'posix' else 'cls')
 
 def get_player_input() -> str:
@@ -233,24 +242,30 @@ def main_menu():
 
 def language_selector():
     global language
+    lang_index = 0
     typewriter("What language do you want to use?")
-    typewriter("1: English")
-    typewriter("2: sigma english") ## internally known as Brainrot English
+    for index in range(languages.amount_of_languages_in_list()):
+        index_plus_1 = index + 1
+        temp_lang = languages.load_language(index)
+        typewriter(f"{index_plus_1}: {temp_lang['NAME']}")
+
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
 
-        if ask == "1":
-            language = languages.english.LANGUAGE
-            break
-        elif ask == "2":
-            language = languages.brainrot_english.LANGUAGE
+        ask_int = 0
+        if ask.isdigit():
+            ask_int = int(ask)
+
+        if languages.amount_of_languages_in_list() >= ask_int > 0:
+            lang_index = ask_int-1
+            language = languages.load_language(lang_index)
             break
 
         console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
         typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
-    game_save['LANGUAGE'] = language
+    game_save['LANGUAGE'] = lang_index
     save_data.save_data(game_save)
 
 

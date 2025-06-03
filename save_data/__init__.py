@@ -3,7 +3,7 @@ import pickle
 SAVE_DATA_FILE = "game_save.pkl"
 
 SAVE_DATA_BASE = {
-    "LANGUAGE": {}, ## pull from languages package
+    "LANGUAGE": -69, ## pull from languages package
     "SAVE_FILE": {}, ## pull from player data
 }
 

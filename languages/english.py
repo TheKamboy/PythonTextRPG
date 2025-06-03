@@ -1,4 +1,6 @@
 LANGUAGE = {
+    "NAME": "English",
+
     ## ## Regular
     "HELP": {
         "PREFIX": "HELP:",

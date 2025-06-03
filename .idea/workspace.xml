@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PythonTextAdventureRPG.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/brainrot_english.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_stuff/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save_data/__init__.py" afterDir="false" />
+    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="those who know">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/brainrot_english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/brainrot_english.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +84,32 @@
       <workItem from="1748824964839" duration="1186000" />
       <workItem from="1748826628849" duration="7409000" />
       <workItem from="1748834696982" duration="2037000" />
-      <workItem from="1748911406610" duration="48000" />
+      <workItem from="1748911406610" duration="2253000" />
     </task>
+    <task id="LOCAL-00001" summary="those who know">
+      <option name="closed" value="true" />
+      <created>1748911464400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748911464400</updated>
+    </task>
+    <task id="LOCAL-00002" summary="those who know">
+      <option name="closed" value="true" />
+      <created>1748911470618</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748911470618</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="those who know" />
+    <option name="LAST_COMMIT_MESSAGE" value="those who know" />
   </component>
 </project>
