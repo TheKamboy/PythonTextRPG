@@ -20,6 +20,11 @@ PLAYER_BASE = {
     "money": 10,
     "items": [],
 
+    ## extras
+    "env_variables": {
+        "chapter_1": {}
+    },
+
     ## Save Data
     "last_time_save": "",
     "saved_in-game_location": ""
