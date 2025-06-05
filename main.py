@@ -30,6 +30,9 @@ import languages
 ## # Saving
 import save_data
 
+## # The game itself
+import game
+
 console = Console()
 
 ## HELP_MSG = """[bold]HELP:[/]
@@ -41,7 +44,8 @@ player = player_stuff.PLAYER_BASE
 ## # Save Data
 game_save = save_data.SAVE_DATA_BASE
 
-language = languages.english ## those who default
+language = languages.english  ## those who default
+
 
 def load_save_data() -> bool:
     """Loads the game data
@@ -58,17 +62,20 @@ def load_save_data() -> bool:
     else:
         return False
 
-    if save['LANGUAGE'] == -69:
+    ## Nice
+    if save["LANGUAGE"] == -69:
         return False
 
-    language = languages.load_language(save['LANGUAGE'])
+    language = languages.load_language(save["LANGUAGE"])
     game_save = save
 
     return True
 
+
 def clear_screen():
     """You don't really need docstrings, since my ass code makes things more verbose, but I'm putting some in places anyway."""
-    _ = call('clear' if os.name == 'posix' else 'cls')
+    _ = call("clear" if os.name == "posix" else "cls")
+
 
 def get_player_input() -> str:
     ## Important for later
@@ -91,6 +98,7 @@ def get_player_input() -> str:
 
     return command_requested
 
+
 def about_game():
     ## Maybe this may change...
     typewriter(f"""Placeholder Game Name:
@@ -102,34 +110,34 @@ Socials:
     Discord Server: https://discord.gg/saZqeK2m9d""")
 
 
-
 # def color_typewriter(string, speed=0.05, end="\n"):
 #     for char in string:
 #         console.print(char, end="")
 #         time.sleep(speed)
 #     print("", end=end)
 
+
 def character_generator():
     clear_screen()
     print(graphics.TITLE_SCREEN)
-    typewriter(language['CHAR_GEN']['NAME']['QUESTION'])
+    typewriter(language["CHAR_GEN"]["NAME"]["QUESTION"])
     name = ""
     while True:
         name = str(console.input(">")).strip()
 
         if name == "":
             console.print(f"[red]{language['ERROR']['PREFIX']} [/]", end="")
-            typewriter(language['ERROR']['CHAR_GEN']['NAME_EMPTY'])
+            typewriter(language["ERROR"]["CHAR_GEN"]["NAME_EMPTY"])
             continue
         elif name.lower() == "help":
             console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
-            typewriter(language['HELP']['CHAR_GEN']['NAME'])
+            typewriter(language["HELP"]["CHAR_GEN"]["NAME"])
             continue
 
         break
     clear_screen()
     print(graphics.TITLE_SCREEN)
-    typewriter(language['CHAR_GEN']['GENDER']['QUESTION'])
+    typewriter(language["CHAR_GEN"]["GENDER"]["QUESTION"])
     typewriter(f"1: {language['CHAR_GEN']['GENDER']['MALE']}")
     typewriter(f"2: {language['CHAR_GEN']['GENDER']['FEMALE']}")
     typewriter(f"3: {language['CHAR_GEN']['GENDER']['OTHER']}")
@@ -144,7 +152,7 @@ def character_generator():
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
     clear_screen()
     print(graphics.TITLE_SCREEN)
-    typewriter(language['CHAR_GEN']['CLASS']['QUESTION'])
+    typewriter(language["CHAR_GEN"]["CLASS"]["QUESTION"])
     typewriter(f"1: {language['CHAR_GEN']['CLASS']['SWORDSMAN']}")
     typewriter(f"2: {language['CHAR_GEN']['CLASS']['RANGER']}")
     typewriter(f"3: {language['CHAR_GEN']['CLASS']['WIZARD']}")
@@ -157,35 +165,35 @@ def character_generator():
             break
         elif charclass.lower() == "help":
             console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
-            typewriter(language['HELP']['CHAR_GEN']['CLASS'])
+            typewriter(language["HELP"]["CHAR_GEN"]["CLASS"])
         else:
             console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
     clear_screen()
     print(graphics.TITLE_SCREEN)
     ## this whole section looks like ass, i know
-    typewriter(language['CHAR_GEN']['CONFIRM']['TO_CONFIRM'], end="")
-    typewriter(language['CHAR_GEN']['CONFIRM']['DOT_DOT_DOT'], speed=0.5)
+    typewriter(language["CHAR_GEN"]["CONFIRM"]["TO_CONFIRM"], end="")
+    typewriter(language["CHAR_GEN"]["CONFIRM"]["DOT_DOT_DOT"], speed=0.5)
     typewriter(f"{language['CHAR_GEN']['CONFIRM']['NAME']} {name}")
     selected_gender = ""
     if gender == "1":
-        selected_gender = language['CHAR_GEN']['GENDER']['MALE']
+        selected_gender = language["CHAR_GEN"]["GENDER"]["MALE"]
     elif gender == "2":
-        selected_gender = language['CHAR_GEN']['GENDER']['FEMALE']
+        selected_gender = language["CHAR_GEN"]["GENDER"]["FEMALE"]
     elif gender == "3":
-        selected_gender = language['CHAR_GEN']['GENDER']['OTHER']
+        selected_gender = language["CHAR_GEN"]["GENDER"]["OTHER"]
     typewriter(f"{language['CHAR_GEN']['CONFIRM']['GENDER']} {selected_gender}")
     selected_class = ""
     if charclass == "1":
-        selected_class = language['CHAR_GEN']['CLASS']['SWORDSMAN']
+        selected_class = language["CHAR_GEN"]["CLASS"]["SWORDSMAN"]
     elif charclass == "2":
-        selected_class = language['CHAR_GEN']['CLASS']['RANGER']
+        selected_class = language["CHAR_GEN"]["CLASS"]["RANGER"]
     elif charclass == "3":
-        selected_class = language['CHAR_GEN']['CLASS']['WIZARD']
+        selected_class = language["CHAR_GEN"]["CLASS"]["WIZARD"]
     elif charclass == "4":
-        selected_class = language['CHAR_GEN']['CLASS']['ALL-ROUNDER']
+        selected_class = language["CHAR_GEN"]["CLASS"]["ALL-ROUNDER"]
     typewriter(f"{language['CHAR_GEN']['CONFIRM']['CLASS']} {selected_class}")
-    typewriter(language['CHAR_GEN']['CONFIRM']['DOT_DOT_DOT'], speed=0.5, end="")
+    typewriter(language["CHAR_GEN"]["CONFIRM"]["DOT_DOT_DOT"], speed=0.5, end="")
     typewriter(f"{language['CHAR_GEN']['CONFIRM']['IS_CORRECT']} (y/n)")
     confirm = ""
     while True:
@@ -215,9 +223,10 @@ def character_generator():
 ## If it hasn't, then it prints the title screen with typewriter(), otherwise it uses print()
 main_menu_first_load_check_yes_why_am_i_making_this_name_long = False
 
+
 def new_or_load_game():
     print(graphics.TITLE_SCREEN)
-    typewriter(language['MAIN_MENU']['START_GAME_SUB']['NEW_OR_LOAD_QUESTION'])
+    typewriter(language["MAIN_MENU"]["START_GAME_SUB"]["NEW_OR_LOAD_QUESTION"])
     typewriter(f"1: {language['MAIN_MENU']['START_GAME_SUB']['NEW_GAME']}")
     typewriter(f"2: {language['MAIN_MENU']['START_GAME_SUB']['LOAD_GAME']}")
     typewriter(f"3: {language['MAIN_MENU']['START_GAME_SUB']['GO_BACK']}")
@@ -227,7 +236,7 @@ def new_or_load_game():
 
         if ask == "1" or ask == "2" or ask == "3":
             break
-        elif ask == "back": ## fix muscle memory issues
+        elif ask == "back":  ## fix muscle memory issues
             ask = "3"
             break
         elif ask == "help":
@@ -248,6 +257,7 @@ def new_or_load_game():
         clear_screen()
         main_menu()
 
+
 def main_menu():
     global main_menu_first_load_check_yes_why_am_i_making_this_name_long
     if not main_menu_first_load_check_yes_why_am_i_making_this_name_long:
@@ -255,10 +265,10 @@ def main_menu():
         main_menu_first_load_check_yes_why_am_i_making_this_name_long = True
     else:
         print(graphics.TITLE_SCREEN)
-    typewriter(f"1: {language["MAIN_MENU"]["OPTION_1"]}", end="")
+    typewriter(f"1: {language['MAIN_MENU']['OPTION_1']}", end="")
     console.print("[black not bold](v0.0.0 \[pre-alpha])[/]")
-    typewriter(f"2: {language["MAIN_MENU"]["OPTION_2"]}")
-    typewriter(f"3: {language["MAIN_MENU"]["OPTION_3"]}")
+    typewriter(f"2: {language['MAIN_MENU']['OPTION_2']}")
+    typewriter(f"3: {language['MAIN_MENU']['OPTION_3']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
@@ -268,7 +278,7 @@ def main_menu():
                 break
             else:
                 about_game()
-        elif ask == "exit": ## fix muscle memory issues
+        elif ask == "exit":  ## fix muscle memory issues
             ask = "3"
             break
         elif ask == "help":
@@ -285,8 +295,9 @@ def main_menu():
     elif ask == "2":
         pass
     elif ask == "3":
-        typewriter(language['OTHER']['EXIT_MSG'])
+        typewriter(language["OTHER"]["EXIT_MSG"])
         exit(0)
+
 
 def language_selector():
     global language
@@ -306,14 +317,14 @@ def language_selector():
             ask_int = int(ask)
 
         if languages.amount_of_languages_in_list() >= ask_int > 0:
-            lang_index = ask_int-1
+            lang_index = ask_int - 1
             language = languages.load_language(lang_index)
             break
 
         console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
         typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
-    game_save['LANGUAGE'] = lang_index
+    game_save["LANGUAGE"] = lang_index
     save_data.save_data(game_save)
 
 
