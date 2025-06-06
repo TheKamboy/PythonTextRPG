@@ -3,10 +3,8 @@
 ## basic story idea:
 ## you arrive at a town that your friend is in, when the town is under attack.
 ## you have to get in sneakily to be able to save them, since you find out that he is still in there from his family.
-import time
 
 ## ## Regular Important Libraries
-import rich
 from rich.console import Console
 from rich.prompt import Confirm, Prompt
 from subprocess import call
@@ -18,11 +16,7 @@ from pathlib import Path
 import graphics
 
 ## # Utilities
-import utils
 from utils import typewriter
-
-## # Defaults
-import player_stuff
 
 ## # Languages
 import languages
