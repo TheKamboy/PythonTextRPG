@@ -32,19 +32,14 @@ import save_data
 
 ## # The game itself
 import game
+from game import player
+from game import save_data
+from game import language
 
 console = Console()
 
 ## HELP_MSG = """[bold]HELP:[/]
 ## No Help Available (so leave me alone)"""
-
-## ## Default Values
-## # Player
-player = player_stuff.PLAYER_BASE
-## # Save Data
-game_save = save_data.SAVE_DATA_BASE
-
-language = languages.english  ## those who default
 
 
 def load_save_data() -> bool:
@@ -266,7 +261,9 @@ def main_menu():
     else:
         print(graphics.TITLE_SCREEN)
     typewriter(f"1: {language['MAIN_MENU']['OPTION_1']}", end="")
-    console.print("[black not bold](v0.0.0 \[pre-alpha])[/]")
+    console.print(
+        "[black not bold](v0.0.0 \[pre-alpha])[/]"
+    )  ## i hate that it keeps complaining here about "\["
     typewriter(f"2: {language['MAIN_MENU']['OPTION_2']}")
     typewriter(f"3: {language['MAIN_MENU']['OPTION_3']}")
     ask = ""
@@ -285,6 +282,12 @@ def main_menu():
             ## those who know: skull
             console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
             typewriter(language["HELP"]["MAIN_MENU"])
+        elif ask == "enter_debug_mode":
+            if game.DEBUG_MODE:
+                pass
+            else:
+                console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+                typewriter(f" {language['ERROR']['NOT_OPTION']}")
         else:
             console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
