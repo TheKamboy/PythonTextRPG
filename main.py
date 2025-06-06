@@ -115,11 +115,11 @@ def character_generator():
         name = str(console.input(">")).strip()
 
         if name == "":
-            console.print(f"[red]{language['ERROR']['PREFIX']} [/]", end="")
+            typewriter(f"{language['ERROR']['PREFIX']} ", end="", style="red")
             typewriter(language["ERROR"]["CHAR_GEN"]["NAME_EMPTY"])
             continue
         elif name.lower() == "help":
-            console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
             typewriter(language["HELP"]["CHAR_GEN"]["NAME"])
             continue
 
@@ -137,7 +137,7 @@ def character_generator():
         if gender == "1" or gender == "2" or gender == "3":
             break
         else:
-            console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
     clear_screen()
     print(graphics.TITLE_SCREEN)
@@ -153,10 +153,10 @@ def character_generator():
         if charclass == "1" or charclass == "2" or charclass == "3" or charclass == "4":
             break
         elif charclass.lower() == "help":
-            console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
             typewriter(language["HELP"]["CHAR_GEN"]["CLASS"])
         else:
-            console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
     clear_screen()
     print(graphics.TITLE_SCREEN)
@@ -198,7 +198,7 @@ def character_generator():
             confirm = "n"
             break
 
-        console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+        typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
         typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
     if confirm == "y":
@@ -230,10 +230,10 @@ def new_or_load_game():
             break
         elif ask == "help":
             ## those who know: skull
-            console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
             typewriter(language["HELP"]["MAIN_MENU"])
         else:
-            console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
     if ask == "1":
@@ -275,16 +275,16 @@ def main_menu():
             break
         elif ask == "help":
             ## those who know: skull
-            console.print(f"[bold]{language['HELP']['PREFIX']}[/]")
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
             typewriter(language["HELP"]["MAIN_MENU"])
-        elif ask == "enter_debug_mode":
+        elif ask == "debug":
             if game.DEBUG_MODE:
                 pass
             else:
-                console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+                typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
                 typewriter(f" {language['ERROR']['NOT_OPTION']}")
         else:
-            console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
     if ask == "1":
@@ -319,7 +319,7 @@ def language_selector():
             language = languages.load_language(lang_index)
             break
 
-        console.print(f"[red]{language['ERROR']['PREFIX']}[/]", end="")
+        typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
         typewriter(f" {language['ERROR']['NOT_OPTION']}")
 
     game_save["LANGUAGE"] = lang_index
