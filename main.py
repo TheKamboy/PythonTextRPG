@@ -27,7 +27,7 @@ import save_data
 ## # The game itself
 import game
 from game import player
-from game import save_data
+from game import game_save
 from game import language
 
 console = Console()
@@ -90,7 +90,7 @@ def get_player_input() -> str:
 
 def about_game():
     ## Maybe this may change...
-    typewriter(f"""Placeholder Game Name:
+    typewriter("""Placeholder Game Name:
     Designed, Programmed, and Writen by: Kamie!
     Some game design choices from      : The people in my Discord Server!
 
@@ -255,9 +255,10 @@ def main_menu():
     else:
         print(graphics.TITLE_SCREEN)
     typewriter(f"1: {language['MAIN_MENU']['OPTION_1']}", end="")
-    console.print(
-        "[black not bold](v0.0.0 \[pre-alpha])[/]"
-    )  ## i hate that it keeps complaining here about "\["
+    # console.print(
+    #     "[black not bold](v0.0.0 \[pre-alpha])[/]"
+    # )  ## i hate that it keeps complaining here about "\["
+    typewriter("(v0.0.0 [pre-alpha])", style="black not bold")
     typewriter(f"2: {language['MAIN_MENU']['OPTION_2']}")
     typewriter(f"3: {language['MAIN_MENU']['OPTION_3']}")
     ask = ""
