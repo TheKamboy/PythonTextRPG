@@ -1,5 +1,6 @@
 LANGUAGE = {
     "NAME": "English",
+    "INPUT_PAUSE": "Press ENTER to continue...",
 
     ## ## Regular
     "HELP": {

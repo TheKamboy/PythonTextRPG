@@ -14,6 +14,7 @@ from pathlib import Path
 ## ## Game Libraries
 ## # Graphics
 import graphics
+import utils.npc
 
 ## # Utilities
 from utils import typewriter
@@ -279,7 +280,15 @@ def main_menu():
             typewriter(language["HELP"]["MAIN_MENU"])
         elif ask == "debug":
             if game.DEBUG_MODE:
-                pass
+                 chat = utils.npc.Conversation("NPC", ["Hi!", "Nice weather we are having huh?"], ["Yeah!", "No it sucks."])
+                 get_response = chat.start_conversation()
+
+                 if get_response == "1":
+                     chat = utils.npc.Conversation("NPC", ["Yeah..."])
+                     _ = chat.start_conversation()
+                 elif get_response == "2":
+                     chat = utils.npc.Conversation("NPC", ["Well, that sucks for you..."])
+                     _ = chat.start_conversation()
             else:
                 typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
                 typewriter(f" {language['ERROR']['NOT_OPTION']}")
