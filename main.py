@@ -4,32 +4,27 @@
 ## you arrive at a town that your friend is in, when the town is under attack.
 ## you have to get in sneakily to be able to save them, since you find out that he is still in there from his family.
 
-## ## Regular Important Libraries
-from rich.console import Console
-from rich.prompt import Confirm, Prompt
-from subprocess import call
 import os
 from pathlib import Path
+from subprocess import call
 
-## ## Game Libraries
-## # Graphics
-import graphics
-import utils.npc
-
-## # Utilities
-from utils import typewriter
-
-## # Languages
-import languages
-
-## # Saving
-import save_data
+## ## Regular Important Libraries
+from rich.console import Console
+from rich.prompt import Confirm
 
 ## # The game itself
 import game
-from game import player
-from game import game_save
-from game import language
+## ## Game Libraries
+## # Graphics
+import graphics
+## # Languages
+import languages
+## # Saving
+import save_data
+import utils.npc
+from game import game_save, language, player
+## # Utilities
+from utils import typewriter
 
 console = Console()
 
@@ -91,13 +86,15 @@ def get_player_input() -> str:
 
 def about_game():
     ## Maybe this may change...
-    typewriter("""Placeholder Game Name:
+    typewriter(
+        """Placeholder Game Name:
     Designed, Programmed, and Writen by: Kamie!
     Some game design choices from      : The people in my Discord Server!
 
 Socials:
     My Website    : https://kamies-blog.netlify.app
-    Discord Server: https://discord.gg/saZqeK2m9d""")
+    Discord Server: https://discord.gg/saZqeK2m9d"""
+    )
 
 
 # def color_typewriter(string, speed=0.05, end="\n"):
@@ -280,15 +277,21 @@ def main_menu():
             typewriter(language["HELP"]["MAIN_MENU"])
         elif ask == "debug":
             if game.DEBUG_MODE:
-                 chat = utils.npc.Conversation("NPC", ["Hi!", "Nice weather we are having huh?"], ["Yeah!", "No it sucks."])
-                 get_response = chat.start_conversation()
+                chat = utils.npc.Conversation(
+                    "NPC",
+                    ["Hi!", "Nice weather we are having huh?"],
+                    ["Yeah!", "No it sucks."],
+                )
+                get_response = chat.start_conversation()
 
-                 if get_response == "1":
-                     chat = utils.npc.Conversation("NPC", ["Yeah..."])
-                     _ = chat.start_conversation()
-                 elif get_response == "2":
-                     chat = utils.npc.Conversation("NPC", ["Well, that sucks for you..."])
-                     _ = chat.start_conversation()
+                if get_response == "1":
+                    chat = utils.npc.Conversation("NPC", ["Yeah..."])
+                    _ = chat.start_conversation()
+                elif get_response == "2":
+                    chat = utils.npc.Conversation(
+                        "NPC", ["Well, that sucks for you..."]
+                    )
+                    _ = chat.start_conversation()
             else:
                 typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
                 typewriter(f" {language['ERROR']['NOT_OPTION']}")

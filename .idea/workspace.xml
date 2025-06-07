@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="idk">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/npc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/npc/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +93,7 @@
       <workItem from="1748834696982" duration="2037000" />
       <workItem from="1748911406610" duration="2253000" />
       <workItem from="1749095010448" duration="36000" />
-      <workItem from="1749266574221" duration="2723000" />
+      <workItem from="1749266574221" duration="3748000" />
     </task>
     <task id="LOCAL-00001" summary="those who know">
       <option name="closed" value="true" />
@@ -158,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749095026616</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="working npc dialogue">
+      <option name="closed" value="true" />
+      <created>1749269316034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749269316034</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +172,8 @@
     <MESSAGE value="things" />
     <MESSAGE value="save" />
     <MESSAGE value="idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk" />
+    <MESSAGE value="working npc dialogue" />
+    <option name="LAST_COMMIT_MESSAGE" value="working npc dialogue" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonTextAdventureRPG$english.coverage" NAME="english Coverage Results" MODIFIED="1749267970872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/languages" />
