@@ -4,13 +4,15 @@ import utils
 
 from rich.console import Console
 
+
 class Conversation:
     """Creates a NPC Conversation
     :arg npc_name: The name of the NPC.
     :arg dialogue: The list of dialogue that the NPC gives.
     :arg response: The list of response that the Player can give as a reply (can be empty).
     """
-    def __init__(self, npc_name:str, dialogue:list[str], response:list[str]=None):
+
+    def __init__(self, npc_name: str, dialogue: list[str], response: list[str] = None):
         self._NPC_NAME = npc_name
         self._DIALOGUE = dialogue
         self._RESPONSE = response
@@ -39,7 +41,7 @@ class Conversation:
 
     def start_conversation(self):
         console = Console(no_color=True)
-        selected_option:str = ""
+        selected_option: str = ""
         for index, i in enumerate(self._DIALOGUE):
             utils.typewriter(f"{self._NPC_NAME}:", end="")
             utils.typewriter(f" {i}", speed=0.02)
