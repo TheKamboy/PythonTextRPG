@@ -14,15 +14,19 @@ from rich.prompt import Confirm
 
 ## # The game itself
 import game
+
 ## ## Game Libraries
 ## # Graphics
 import graphics
+
 ## # Languages
 import languages
+
 ## # Saving
 import save_data
 import utils.npc
 from game import game_save, language, player
+
 ## # Utilities
 from utils import typewriter
 
@@ -252,13 +256,13 @@ def main_menu():
         main_menu_first_load_check_yes_why_am_i_making_this_name_long = True
     else:
         print(graphics.TITLE_SCREEN)
-    typewriter(f"1: {language['MAIN_MENU']['OPTION_1']}", end="")
+    typewriter(f"1: {language['MAIN_MENU']['START_GAME']}", end="")
     # console.print(
     #     "[black not bold](v0.0.0 \[pre-alpha])[/]"
     # )  ## i hate that it keeps complaining here about "\["
     typewriter("(v0.0.0 [pre-alpha])", style="black not bold")
-    typewriter(f"2: {language['MAIN_MENU']['OPTION_2']}")
-    typewriter(f"3: {language['MAIN_MENU']['OPTION_3']}")
+    typewriter(f"2: {language['MAIN_MENU']['ABOUT']}")
+    typewriter(f"3: {language['MAIN_MENU']['EXIT_GAME']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
