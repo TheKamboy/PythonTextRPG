@@ -63,7 +63,10 @@ def load_save_data() -> bool:
 
 def clear_screen():
     """You don't really need docstrings, since my ass code makes things more verbose, but I'm putting some in places anyway."""
-    _ = call("clear" if os.name == "posix" else "cls")
+    if os.name == "posix":
+        _ = call("clear")
+    else:
+        _ = call("cmd /C cls")
 
 
 def get_player_input() -> str:
