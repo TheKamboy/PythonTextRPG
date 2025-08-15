@@ -1,4 +1,4 @@
-## Check the about_game() function (in this file) for game credits
+# Check the about_game() function (in this file) for game credits
 
 ## basic story idea:
 ## you arrive at a town that your friend is in, when the town is under attack.
@@ -251,6 +251,31 @@ def new_or_load_game():
         clear_screen()
         main_menu()
 
+def settings_menu():
+    clear_screen()
+    print(graphics.TITLE_SCREEN)
+    typewriter(f"1: {language['MAIN_MENU']['SETTINGS_SUB']['CHANGE_LANGUAGE']} {language['MAIN_MENU']['SETTINGS_SUB']['CURRENT_LANGUAGE']}")
+    typewriter(f"2: {language['MAIN_MENU']['SETTINGS_SUB']['GO_BACK']}")
+    ask = ""
+    while True:
+        ask = str(console.input(">")).lower().strip()
+
+        if ask == "1" or ask == "2" or ask == "back":
+            break
+        elif ask == "help":
+            ## those who know: skull
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
+            typewriter(language["HELP"]["MAIN_MENU"])
+        else:
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
+            typewriter(f" {language['ERROR']['NOT_OPTION']}")
+    if ask == "1":
+        clear_screen()
+        language_selector()
+        settings_menu()
+    else:
+        clear_screen()
+        main_menu()
 
 def main_menu():
     global main_menu_first_load_check_yes_why_am_i_making_this_name_long
@@ -265,18 +290,20 @@ def main_menu():
     # )  ## i hate that it keeps complaining here about "\["
     typewriter("(v0.0.0 [pre-alpha])", style="black not bold")
     typewriter(f"2: {language['MAIN_MENU']['ABOUT']}")
-    typewriter(f"3: {language['MAIN_MENU']['EXIT_GAME']}")
+    typewriter(f"3: {language['MAIN_MENU']['SETTINGS']}")
+    typewriter(f"4: {language['MAIN_MENU']['EXIT_GAME']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
 
-        if ask == "1" or ask == "2" or ask == "3":
+        # yandere dev ass if statement
+        if ask == "1" or ask == "2" or ask == "3" or ask == "4":
             if ask != "2":
                 break
             else:
                 about_game()
-        elif ask == "exit":  ## fix muscle memory issues
-            ask = "3"
+        elif ask == "exit" or ask == "quit" or ask == "q":  ## fix muscle memory issues
+            ask = "4"
             break
         elif ask == "help":
             ## those who know: skull
@@ -309,9 +336,9 @@ def main_menu():
     if ask == "1":
         clear_screen()
         new_or_load_game()
-    elif ask == "2":
-        pass
     elif ask == "3":
+        settings_menu()
+    elif ask == "4":
         typewriter(language["OTHER"]["EXIT_MSG"])
         exit(0)
 

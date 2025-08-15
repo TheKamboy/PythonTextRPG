@@ -29,8 +29,8 @@ All-Rounder - good with all weapons    (no bonuses)""",
     ## # Main Menu
     "MAIN_MENU": {
         ## Options
-        ## TODO: replace option naming to make more human readable
         "START_GAME": "Start Game   ",  ## must be 12 chars or fewer for the spacing of version number
+        "SETTINGS": "Settings",
         "ABOUT": "About",
         "EXIT_GAME": "Exit Game",
         "START_GAME_SUB": {
@@ -38,6 +38,11 @@ All-Rounder - good with all weapons    (no bonuses)""",
             "NEW_GAME": "New Game",
             "LOAD_GAME": "Load Game",
             "GO_BACK": "Go Back",
+        },
+        "SETTINGS_SUB": {
+            "GO_BACK": "Go Back",
+            "CHANGE_LANGUAGE": "Change Language",
+            "CURRENT_LANGUAGE": "(Current Language: English)",
         },
     },
     ## # Character Generator
