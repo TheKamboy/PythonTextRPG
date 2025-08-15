@@ -8,6 +8,7 @@ LANGUAGE = {
         "CHAR_GEN": {
             "NAME": """Are you trying to name your character "help", or are asking for help to name your character?
 If it's the other thing, maybe name your character "John", or "Jane".""",
+            "GENDER": "Not sure how to help you with this one...",
             "CLASS": """Classes designed for certain weapons will have bonus damage for that weapon,
 but less damage and a bigger chance of missing for weapons they're not designed for.
 

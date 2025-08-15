@@ -141,6 +141,10 @@ def character_generator():
 
         if gender == "1" or gender == "2" or gender == "3":
             break
+        elif gender.lower() == "help":
+            typewriter(f"{language['HELP']['PREFIX']}", style="bold")
+            typewriter(language["HELP"]["CHAR_GEN"]["GENDER"])
+            continue
         else:
             typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
             typewriter(f" {language['ERROR']['NOT_OPTION']}")
