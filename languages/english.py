@@ -73,6 +73,16 @@ All-Rounder - good with all weapons    (no bonuses)""",
             "CLASS": "Your class will be: ",
         },
     },
+    ## # Story Messages (like actually relating to the story)
+    "STORY": {
+        "NPC": {
+
+        },
+    },
+    ## # Basic NPC Dialogue (not important to the story)
+    "NPC_DIALOGUE": {
+
+    },
     ## ## Other
     "OTHER": {
         "EXIT_MSG": "Goodbye!",
