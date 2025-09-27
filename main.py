@@ -5,6 +5,7 @@
 ## you have to get in sneakily to be able to save them, since you find out that he is still in there from his family.
 
 import os
+import time
 from pathlib import Path
 from subprocess import call
 
@@ -256,18 +257,27 @@ def new_or_load_game():
         main_menu()
 
 
+typewriter_settingsmenu_title = False
+
+
 def settings_menu():
+    global typewriter_settingsmenu_title
     clear_screen()
-    print(graphics.TITLE_SCREEN)
+    if not typewriter_settingsmenu_title:
+        print(graphics.TITLE_SCREEN)
+    else:
+        typewriter(graphics.TITLE_SCREEN)
+        typewriter_settingsmenu_title = False
     typewriter(
         f"1: {language['MAIN_MENU']['SETTINGS_SUB']['CHANGE_LANGUAGE']} {language['MAIN_MENU']['SETTINGS_SUB']['CURRENT_LANGUAGE']}"
     )
-    typewriter(f"2: {language['OTHER']['OPTIONS']['GO_BACK']}")
+    typewriter(f"2: {language['MAIN_MENU']['SETTINGS_SUB']['DELETE_SAVE']}")
+    typewriter(f"3: {language['OTHER']['OPTIONS']['GO_BACK']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
 
-        if ask == "1" or ask == "2" or ask == "back":
+        if ask == "1" or ask == "2" or ask == "3" or ask == "back":
             break
         elif ask == "help":
             ## those who know: skull
@@ -279,6 +289,57 @@ def settings_menu():
     if ask == "1":
         clear_screen()
         language_selector()
+        typewriter_settingsmenu_title = True
+        settings_menu()
+    elif ask == "2":
+        clear_screen()
+        typewriter(
+            "Are you sure you want to delete your save? You will not be able to get your save back through normal means if you do.",
+            style="red",
+        )
+        typewriter("(y/n)", style="red")
+        confirm = ""
+        while True:
+            confirm = str(console.input(">")).strip().lower()
+
+            if confirm == "y" or confirm == "n":
+                break
+
+            if confirm == "yes":
+                confirm = "y"
+                break
+            elif confirm == "no":
+                confirm = "n"
+                break
+
+            typewriter(f"{language['ERROR']['PREFIX']}", end="", style="red")
+            typewriter(f" {language['ERROR']['NOT_OPTION']}")
+        if confirm == "y":
+            typewriter("Deleting save in 5...", style="red", end="")
+            time.sleep(1)
+            typewriter("4...", speed=0, style="red", end="")
+            time.sleep(1)
+            typewriter("3...", speed=0, style="red", end="")
+            time.sleep(1)
+            typewriter("2...", speed=0, style="red", end="")
+            time.sleep(1)
+            typewriter("1...", speed=0, style="red", end="")
+            time.sleep(1)
+            print()
+
+            file_location = Path(save_data.SAVE_DATA_FILE)
+
+            if not file_location.is_file():
+                typewriter(
+                    language["ERROR"]["FALLBACK"]["SAVE_DELETE_BUT_SAVE_DOES_NOT_EXIST"]
+                )
+                exit(1)
+
+            os.remove(file_location.name)
+            typewriter("Save deleted! Closing the game...")
+            exit(0)
+        clear_screen()
+        typewriter_settingsmenu_title = True
         settings_menu()
     else:
         clear_screen()
