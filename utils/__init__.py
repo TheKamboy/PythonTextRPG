@@ -2,7 +2,6 @@ import time
 
 from rich.console import Console
 
-import utils.npc
 
 def typewriter(string, speed=0.003, style="", end="\n"):
     console = Console(no_color=True if style == "" else False)

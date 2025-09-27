@@ -72,7 +72,22 @@ All-Rounder - good with all weapons    (no bonuses)""",
     ## # Basic NPC Dialogue (not important to the story)
     "NPC_DIALOGUE": {},
     ## # Item Names
-    "ITEM": {"WEAPONS": {}, "STICK": "Stick"},
+    "ITEM": {
+        "WEAPONS": {},
+        "MESSAGES": {
+            "HANDLING": {
+                "LETTERS_TO_LOOK_FOR": ["a", "e", "i", "o", "u"],
+                "A": "a",
+                "AN": "an",
+            },
+            ## Variables:
+            ## - [an]  : gets replaced with "a" or "an", depending on the starting letter of the item name. (not sure if this is used in other languages, so it is a built in thing that you can just disable by not using it)
+            ## - [item]: gets replaced with the item name.
+            "GOT_ITEM": "You got [an] [item]!",
+            "DISCARD_ITEM": "You discarded the [item].",
+        },
+        "STICK": "Stick",
+    },
     ## ## Other
     "OTHER": {
         "EXIT_MSG": "Goodbye!",
