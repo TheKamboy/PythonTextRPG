@@ -296,7 +296,7 @@ def main_menu():
     # console.print(
     #     "[black not bold](v0.0.0 \[pre-alpha])[/]"
     # )  ## i hate that it keeps complaining here about "\["
-    typewriter("(v0.0.0 [pre-alpha])", style="black not bold")
+    typewriter("(v0.0.1 [pre-alpha])", style="black not bold")
     typewriter(f"2: {language['MAIN_MENU']['ABOUT']}")
     typewriter(f"3: {language['MAIN_MENU']['SETTINGS']}")
     typewriter(f"4: {language['MAIN_MENU']['EXIT_GAME']}")
