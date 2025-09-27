@@ -20,9 +20,7 @@ All-Rounder - good with all weapons    (no bonuses)""",
     },
     "ERROR": {
         "PREFIX": "ERROR:",
-        "CHAR_GEN": {
-            "NAME_EMPTY": "Your name can't be empty!",
-        },
+        "CHAR_GEN": {"NAME_EMPTY": "Your name can't be empty!"},
         "NOT_OPTION": "Not an option.",
     },
     ## ## In-Game Stuff
@@ -48,9 +46,7 @@ All-Rounder - good with all weapons    (no bonuses)""",
     },
     ## # Character Generator
     "CHAR_GEN": {
-        "NAME": {
-            "QUESTION": "What will your name be?",
-        },
+        "NAME": {"QUESTION": "What will your name be?"},
         "GENDER": {
             "QUESTION": "What will your gender be?",
             "MALE": "Male",
@@ -74,17 +70,11 @@ All-Rounder - good with all weapons    (no bonuses)""",
         },
     },
     ## # Story Messages (like actually relating to the story)
-    "STORY": {
-        "NPC": {
-
-        },
-    },
+    "STORY": {"NPC": {}},
     ## # Basic NPC Dialogue (not important to the story)
-    "NPC_DIALOGUE": {
-
-    },
+    "NPC_DIALOGUE": {},
+    ## # Item Names
+    "ITEM": {"WEAPONS": {}, "STICK": "Stick"},
     ## ## Other
-    "OTHER": {
-        "EXIT_MSG": "Goodbye!",
-    },
+    "OTHER": {"EXIT_MSG": "Goodbye!"},
 }
