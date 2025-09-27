@@ -255,10 +255,13 @@ def new_or_load_game():
         clear_screen()
         main_menu()
 
+
 def settings_menu():
     clear_screen()
     print(graphics.TITLE_SCREEN)
-    typewriter(f"1: {language['MAIN_MENU']['SETTINGS_SUB']['CHANGE_LANGUAGE']} {language['MAIN_MENU']['SETTINGS_SUB']['CURRENT_LANGUAGE']}")
+    typewriter(
+        f"1: {language['MAIN_MENU']['SETTINGS_SUB']['CHANGE_LANGUAGE']} {language['MAIN_MENU']['SETTINGS_SUB']['CURRENT_LANGUAGE']}"
+    )
     typewriter(f"2: {language['MAIN_MENU']['SETTINGS_SUB']['GO_BACK']}")
     ask = ""
     while True:
@@ -280,6 +283,7 @@ def settings_menu():
     else:
         clear_screen()
         main_menu()
+
 
 def main_menu():
     global main_menu_first_load_check_yes_why_am_i_making_this_name_long
@@ -310,7 +314,6 @@ def main_menu():
             ask = "4"
             break
         elif ask == "help":
-            ## those who know: skull
             typewriter(f"{language['HELP']['PREFIX']}", style="bold")
             typewriter(language["HELP"]["MAIN_MENU"])
         elif ask == "debug":
