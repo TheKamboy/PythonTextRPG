@@ -227,7 +227,7 @@ def new_or_load_game():
     typewriter(language["MAIN_MENU"]["START_GAME_SUB"]["NEW_OR_LOAD_QUESTION"])
     typewriter(f"1: {language['MAIN_MENU']['START_GAME_SUB']['NEW_GAME']}")
     typewriter(f"2: {language['MAIN_MENU']['START_GAME_SUB']['LOAD_GAME']}")
-    typewriter(f"3: {language['MAIN_MENU']['START_GAME_SUB']['GO_BACK']}")
+    typewriter(f"3: {language['OTHER']['OPTIONS']['GO_BACK']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()
@@ -262,7 +262,7 @@ def settings_menu():
     typewriter(
         f"1: {language['MAIN_MENU']['SETTINGS_SUB']['CHANGE_LANGUAGE']} {language['MAIN_MENU']['SETTINGS_SUB']['CURRENT_LANGUAGE']}"
     )
-    typewriter(f"2: {language['MAIN_MENU']['SETTINGS_SUB']['GO_BACK']}")
+    typewriter(f"2: {language['OTHER']['OPTIONS']['GO_BACK']}")
     ask = ""
     while True:
         ask = str(console.input(">")).lower().strip()

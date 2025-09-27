@@ -36,10 +36,8 @@ All-Rounder - good with all weapons    (no bonuses)""",
             "NEW_OR_LOAD_QUESTION": "Would you like to start a new game, or load a saved game?",
             "NEW_GAME": "New Game",
             "LOAD_GAME": "Load Game",
-            "GO_BACK": "Go Back",
         },
         "SETTINGS_SUB": {
-            "GO_BACK": "Go Back",
             "CHANGE_LANGUAGE": "Change Language",
             "CURRENT_LANGUAGE": "(Current Language: English)",
         },
@@ -76,5 +74,9 @@ All-Rounder - good with all weapons    (no bonuses)""",
     ## # Item Names
     "ITEM": {"WEAPONS": {}, "STICK": "Stick"},
     ## ## Other
-    "OTHER": {"EXIT_MSG": "Goodbye!"},
+    "OTHER": {
+        "EXIT_MSG": "Goodbye!",
+        "LANGUAGE_QUESTION": "",
+        "OPTIONS": {"GO_BACK": "Go Back"},
+    },
 }
