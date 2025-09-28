@@ -1,7 +1,6 @@
 # Python Text RPG
 
-> [!NOTE]
-> not official name
+![logo](/assets/python_text_adventure_logo_small.png)
 
 README is under construction!
 
