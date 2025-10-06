@@ -294,7 +294,7 @@ def settings_menu():
     elif ask == "2":
         clear_screen()
         typewriter(
-            "Are you sure you want to delete your save? You will not be able to get your save back through normal means if you do.",
+            language["OTHER"]["DELETE_SAVE_MESSAGE"],
             style="red italic not bold",
         )
         typewriter("(y/n)", style="red italic not bold")

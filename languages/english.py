@@ -96,6 +96,7 @@ All-Rounder - good with all weapons    (no bonuses)""",
     "OTHER": {
         "EXIT_MSG": "Goodbye!",
         "LANGUAGE_QUESTION": "",
+        "DELETE_SAVE_MESSAGE": "Are you sure you want to delete your save? You will not be able to get your save back through normal means if you do.",
         "OPTIONS": {"GO_BACK": "Go Back"},
     },
 }
