@@ -297,7 +297,7 @@ def settings_menu():
             language["OTHER"]["DELETE_SAVE_MESSAGE"],
             style="red italic not bold",
         )
-        typewriter("(y/n)", style="red italic not bold")
+        typewriter("(y/n)", style="red not bold")
         confirm = ""
         while True:
             confirm = str(console.input(">")).strip().lower()
