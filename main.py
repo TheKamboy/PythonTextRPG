@@ -295,9 +295,9 @@ def settings_menu():
         clear_screen()
         typewriter(
             "Are you sure you want to delete your save? You will not be able to get your save back through normal means if you do.",
-            style="red",
+            style="red italic not bold",
         )
-        typewriter("(y/n)", style="red")
+        typewriter("(y/n)", style="red italic not bold")
         confirm = ""
         while True:
             confirm = str(console.input(">")).strip().lower()
