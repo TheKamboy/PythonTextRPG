@@ -235,7 +235,7 @@ def new_or_load_game():
 
         if ask == "1" or ask == "2" or ask == "3":
             break
-        elif ask == "back":  ## fix muscle memory issues
+        elif ask == "back" or ask == "q":  ## fix muscle memory issues
             ask = "3"
             break
         elif ask == "help":
@@ -277,7 +277,7 @@ def settings_menu():
     while True:
         ask = str(console.input(">")).lower().strip()
 
-        if ask == "1" or ask == "2" or ask == "3" or ask == "back":
+        if ask == "1" or ask == "2" or ask == "3" or ask == "back" or ask == "q":
             break
         elif ask == "help":
             ## those who know: skull
