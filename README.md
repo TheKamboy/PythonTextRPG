@@ -6,7 +6,7 @@ README is under construction!
 
 ## How to Play
 
-You will need to install Python to play (obviously). You can learn how to install it if you go to the [Python Website](https://www.python.org/)
+You will need to install Python to play (obviously). You can learn how to install it if you go to the [Python Website](https://www.python.org/).
 
 Also, you will need to install the `rich` library for Python. You can do so with pip: `python -m pip install rich`
 
