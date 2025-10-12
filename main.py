@@ -23,13 +23,13 @@ import graphics
 ## # Languages
 import languages
 
-## # Saving
+## # Saving and Player Data
 import save_data
-import utils.npc
 from game import game_save, language, player
 
 ## # Utilities
 from utils import typewriter
+import utils.npc
 
 console = Console()
 
