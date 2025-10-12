@@ -95,7 +95,7 @@ def get_player_input() -> str:
 def about_game():
     ## Maybe this may change...
     typewriter(
-        """Placeholder Game Name:
+        """PythonTextRPG:
     Designed, Programmed, and Writen by: Kamie!
     Some game design choices from      : The people in my Discord Server!
 
