@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b413fe2-f2b5-42d6-9c81-5b95b74e885c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +53,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/kamie/Projects/Games/PythonTextRPG",
+    "last_opened_file_path": "/home/kamie/Work/Games/PythonTextRPG",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "proofread",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -73,7 +71,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
@@ -97,6 +96,9 @@
       <workItem from="1748911406610" duration="2253000" />
       <workItem from="1749095010448" duration="36000" />
       <workItem from="1749266574221" duration="3748000" />
+      <workItem from="1764212951244" duration="27000" />
+      <workItem from="1764212986761" duration="42000" />
+      <workItem from="1764213044278" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="those who know">
       <option name="closed" value="true" />
