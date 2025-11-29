@@ -225,9 +225,24 @@ def character_generator():
 main_menu_first_load_check_yes_why_am_i_making_this_name_long = False
 
 
-def save_selector():
+def load_save_selector():
+    save1label = string_with_vars_handler(
+        language["MAIN_MENU"]["SAVE_SELECTION"]["SAVE_LABEL"], "#", "1"
+    )
+    save2label = string_with_vars_handler(
+        language["MAIN_MENU"]["SAVE_SELECTION"]["SAVE_LABEL"], "#", "2"
+    )
+    save3label = string_with_vars_handler(
+        language["MAIN_MENU"]["SAVE_SELECTION"]["SAVE_LABEL"], "#", "3"
+    )
     print(graphics.TITLE_SCREEN)
-    typewriter(language["MAIN_MENU"]["SAVE_SELECTION"]["SAVE_QUESTION"])
+    typewriter(
+        language["MAIN_MENU"]["SAVE_SELECTION"]["QUESTIONS"]["LOAD_SAVE_QUESTION"]
+    )
+    typewriter(f"1: {save1label}")
+    typewriter(f"2: {save2label}")
+    typewriter(f"3: {save3label}")
+    typewriter(f"4: {language['OTHER']['OPTIONS']['GO_BACK']}")
 
 
 def new_or_load_game():
@@ -258,7 +273,7 @@ def new_or_load_game():
         character_generator()
     elif ask == "2":
         clear_screen()
-        save_selector()
+        load_save_selector()
     elif ask == "3":
         clear_screen()
         main_menu()
