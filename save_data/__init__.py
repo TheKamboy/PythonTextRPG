@@ -7,6 +7,7 @@ SAVE_DATA_FOLDER = "_saves"
 SAVE_DATA_BASE = {
     "LANGUAGE": -69,  ## pull from languages package
     "SAVE_FILE": {},  ## pull from player data
+    "SAVES": [],
 }
 
 
@@ -30,6 +31,12 @@ def create_save_folder():
             f"ERROR: Was not able to create the saves folder for the following reason: {e}"
         )
         exit(1)
+
+    with open(f"{SAVE_DATA_FOLDER}/README.txt", "w") as f:
+        f.write(
+            "This is the save data folder. Do not delete this folder if you have save data in here!"
+        )
+    f.close()
 
 
 def load_data(file=SAVE_DATA_FILE) -> dict:

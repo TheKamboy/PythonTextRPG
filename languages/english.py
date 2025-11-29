@@ -42,9 +42,14 @@ All-Rounder - good with all weapons    (no bonuses)""",
             "LOAD_GAME": "Load Game",
         },
         "SAVE_SELECTION": {
-            "SAVE_QUESTION": "Which save would you like to use?",
             ## Variables
             ## - [#]: The save number.
+            "QUESTIONS": {
+                "LOAD_SAVE_QUESTION": "Which save would you like to load?",
+                "SAVE_SAVE_QUESTION": "Which save would you like to save your progress to?",
+                "DELETE_SAVE_QUESTION": "Which save would you like to delete?",
+                "SHOULD_DELETE_SAVE_QUESTION": "Are you sure you want to delete Save [#]?",
+            },
             "SAVE_LABEL": "Save [#]",
         },
         "SETTINGS_SUB": {

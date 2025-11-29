@@ -15,16 +15,20 @@ from rich.prompt import Confirm
 
 ## # The game itself
 import game
+
 ## ## Game Libraries
 ## # Graphics
 import graphics
+
 ## # Languages
 import languages
+
 ## # Saving and Player Data
 import save_data
 from game import game_save, language
+
 ## # Utilities
-from utils import typewriter
+from utils import string_with_vars_handler, typewriter
 
 console = Console()
 
@@ -62,7 +66,7 @@ def load_save_data() -> bool:
 
 def clear_screen():
     """You don't really need docstrings, since my ass code makes things more verbose, but I'm putting some in places anyway."""
-    if os.name == "posix":
+    if os.name == "posix":  # posix = linux
         _ = call("clear")
     else:
         _ = call("cmd /C cls")
