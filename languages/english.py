@@ -22,6 +22,7 @@ All-Rounder - good with all weapons    (no bonuses)""",
         "PREFIX": "ERROR:",
         "CHAR_GEN": {"NAME_EMPTY": "Your name can't be empty!"},
         "NOT_OPTION": "Not an option.",
+        "EMPTY_SAVE": "That save is empty.",
         "FALLBACK": {
             "SAVE_DELETE_BUT_SAVE_DOES_NOT_EXIST": "Weird! You tried to delete your save, but your save doesn't even exist...I'm guessing you deleted it yourself while the game was running, or the game is modified...I'll close the game anyway."
         },
@@ -39,6 +40,12 @@ All-Rounder - good with all weapons    (no bonuses)""",
             "NEW_OR_LOAD_QUESTION": "Would you like to start a new game, or load a saved game?",
             "NEW_GAME": "New Game",
             "LOAD_GAME": "Load Game",
+        },
+        "SAVE_SELECTION": {
+            "SAVE_QUESTION": "Which save would you like to use?",
+            ## Variables
+            ## - [#]: The save number.
+            "SAVE_LABEL": "Save [#]",
         },
         "SETTINGS_SUB": {
             "DELETE_SAVE": "Erase Save",

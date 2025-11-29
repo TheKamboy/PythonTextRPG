@@ -15,18 +15,14 @@ from rich.prompt import Confirm
 
 ## # The game itself
 import game
-
 ## ## Game Libraries
 ## # Graphics
 import graphics
-
 ## # Languages
 import languages
-
 ## # Saving and Player Data
 import save_data
 from game import game_save, language
-
 ## # Utilities
 from utils import typewriter
 
@@ -49,6 +45,9 @@ def load_save_data() -> bool:
     if file_location.is_file():
         save = save_data.load_data()
     else:
+        return False
+
+    if not os.path.isdir(save_data.SAVE_DATA_FOLDER):
         return False
 
     ## Nice
@@ -222,6 +221,11 @@ def character_generator():
 main_menu_first_load_check_yes_why_am_i_making_this_name_long = False
 
 
+def save_selector():
+    print(graphics.TITLE_SCREEN)
+    typewriter(language["MAIN_MENU"]["SAVE_SELECTION"]["SAVE_QUESTION"])
+
+
 def new_or_load_game():
     print(graphics.TITLE_SCREEN)
     typewriter(language["MAIN_MENU"]["START_GAME_SUB"]["NEW_OR_LOAD_QUESTION"])
@@ -249,8 +253,8 @@ def new_or_load_game():
         clear_screen()
         character_generator()
     elif ask == "2":
-        print("unfished")
-        exit(1)
+        clear_screen()
+        save_selector()
     elif ask == "3":
         clear_screen()
         main_menu()
@@ -446,6 +450,7 @@ def main():
     #     request = get_player_input()
     #     console.print(request)
     if not load_save_data():
+        save_data.create_save_folder()
         clear_screen()
         language_selector()
     clear_screen()
@@ -454,3 +459,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+else:
+    print("This game cannot run as a module! Force quitting program...")
+    exit(1)
